@@ -18,7 +18,8 @@ test -f slax-64bit-9.9.1.iso
 apt install -y parted syslinux-common syslinux-efi
 dd if=/dev/zero of=${thumbdrive} bs=1M count=5
 sync
-sudo /sbin/parted ${thumbdrive} mkpart primary 0% 100% --script
+/sbin/parted ${thumbdrive} mklabel msdos --script
+/sbin/parted ${thumbdrive} mkpart primary 0% 100% --script
 mkfs.vfat ${thumbdrive}1
 mkdir /media/{source,target}
 mount -o loop -t iso9660 slax-64bit-9.9.1.iso /media/source
