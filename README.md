@@ -105,3 +105,22 @@ Thumbdrive should now have the following files:
 /media/target/EFI/Boot/vesamenu.c32
 /media/target/EFI/Boot/syslinux.cfg
 ~~~
+
+## Did it work?
+
+Boot from the thumbdrive using EFI and check whether it worked with:
+
+~~~
+# ls -l /sys/firmware/efi/
+total 0
+-r--r--r--  1 root root 4096 Feb 24 21:03 config_table
+drwxr-xr-x  2 root root    0 Feb 24  2020 efivars
+-r--r--r--  1 root root 4096 Feb 24 21:03 fw_platform_size
+-r--r--r--  1 root root 4096 Feb 24 21:03 fw_vendor
+-r--r--r--  1 root root 4096 Feb 24 21:03 runtime
+drwxr-xr-x  6 root root    0 Feb 24 21:03 runtime-map
+-r--------  1 root root 4096 Feb 24 21:03 systab
+drwxr-xr-x 27 root root    0 Feb 24  2020 vars
+~~~
+
+This directory only exists, when booting in EFI mode.
