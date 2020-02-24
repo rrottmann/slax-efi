@@ -29,7 +29,7 @@ bash -x /media/target/slax/boot/bootinst.sh
 mkdir -p /media/target/EFI/Boot/
 cp /usr/lib/SYSLINUX.EFI/efi64/syslinux.efi /media/target/EFI/Boot/bootx64.efi
 cd /usr/lib/syslinux/modules/efi64/
-cp syslinux.efi ldlinux.e64 menu.c32 libcom32.c32 libutil.c32 vesamenu.c32 /media/target/EFI/Boot
+cp ldlinux.e64 menu.c32 libcom32.c32 libutil.c32 vesamenu.c32 /media/target/EFI/Boot
 cat > /media/target/EFI/Boot/syslinux.cfg <<"SYSLINUXCFG"
 TIMEOUT 30
 ONTIMEOUT slax
