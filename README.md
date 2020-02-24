@@ -55,3 +55,53 @@ SYSLINUXCFG
 
 > **Please Note (3):**
 > The thumb drive uses regular MBR partitioning!
+
+## Files on Thumbdrive
+
+Thumbdrive should now have the following files:
+~~~
+# find /media/target/
+/media/target/
+/media/target/slax
+/media/target/slax/01-core.sb
+/media/target/slax/01-firmware.sb
+/media/target/slax/02-xorg.sb
+/media/target/slax/03-desktop.sb
+/media/target/slax/04-apps.sb
+/media/target/slax/05-chromium.sb
+/media/target/slax/changes
+/media/target/slax/boot
+/media/target/slax/boot/bootinst.bat
+/media/target/slax/boot/bootinst.sh
+/media/target/slax/boot/bootlogo.png
+/media/target/slax/boot/extlinux.x32
+/media/target/slax/boot/extlinux.x64
+/media/target/slax/boot/help.txt
+/media/target/slax/boot/initrfs.img
+/media/target/slax/boot/isolinux.bin
+/media/target/slax/boot/isolinux.boot
+/media/target/slax/boot/ldlinux.c32
+/media/target/slax/boot/libcom32.c32
+/media/target/slax/boot/libutil.c32
+/media/target/slax/boot/mbr.bin
+/media/target/slax/boot/pxelinux.0
+/media/target/slax/boot/runadmin.vbs
+/media/target/slax/boot/samedisk.vbs
+/media/target/slax/boot/syslinux.cfg
+/media/target/slax/boot/syslinux.com
+/media/target/slax/boot/syslinux.exe
+/media/target/slax/boot/vesamenu.c32
+/media/target/slax/boot/vmlinuz
+/media/target/slax/boot/zblack.png
+/media/target/slax/boot/ldlinux.sys
+/media/target/slax/modules
+/media/target/EFI
+/media/target/EFI/Boot
+/media/target/EFI/Boot/bootx64.efi
+/media/target/EFI/Boot/ldlinux.e64
+/media/target/EFI/Boot/menu.c32
+/media/target/EFI/Boot/libcom32.c32
+/media/target/EFI/Boot/libutil.c32
+/media/target/EFI/Boot/vesamenu.c32
+/media/target/EFI/Boot/syslinux.cfg
+~~~
