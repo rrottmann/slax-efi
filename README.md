@@ -25,7 +25,7 @@ mkdir /media/{source,target}
 mount -o loop -t iso9660 slax-64bit-9.9.1.iso /media/source
 mount -t vfat ${thumbdrive}1 /media/target
 cp -axv /media/source/slax /media/target/slax
-bash -x /media/target/slax/bootinst.sh
+bash -x /media/target/slax/boot/bootinst.sh
 mkdir -p /media/target/EFI/Boot/
 cp /usr/lib/SYSLINUX.EFI/efi64/syslinux.efi /media/target/EFI/Boot/bootx64.efi
 cd /usr/lib/syslinux/modules/efi64/
